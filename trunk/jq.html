@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript" src="common/js/jquery-1.7.min.js"></script>
+<script>
+	function j(){
+		var v=arguments[0];
+		j.prototype={
+			init:function(){ v=document.getElementById(v);},
+			val:function(){return v.value;}
+		}
+	}
+	window.onload=function(){
+		alert(new j("btn").val);	
+	}
+	
+</script>
+<title>jquery</title>
+</head>
+<body>
+	<input type="button" id="btn" value="button" />
+    <p>内中有前馈</p>
+    ddddddd
+</body>
+</html>
